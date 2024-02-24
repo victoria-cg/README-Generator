@@ -17,10 +17,15 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   console.log("What generate markdown receives: ", data)
   return `# ${data.title}
+  ## Description
   ## table of contents
-
+  ##Installation
+  ##Usage
   ## License
   ${renderLicenseBadge(data.license)}
+  ##Contributing
+  ##Tests
+  ##Questions
 `;
 }
 
