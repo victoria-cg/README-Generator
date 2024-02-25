@@ -16,11 +16,6 @@ let questionsToAsk = [
   },
   {
     type: "input",
-    message: "What do you want your table of contents to say?",
-    name: "contents",
-  },
-  {
-    type: "input",
     message: "What is your project's installation process?",
     name: "installation",
   },

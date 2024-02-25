@@ -19,20 +19,34 @@ function generateMarkdown(data) {
   console.log("Info that generateMarkdown receives: ", data);
   return `# ${data.title}
   ${renderLicenseBadge(data.license)}
+  
   ## Description
   ${data.description}
-  ## table of contents
-  ${data.contents}
+
+  ## Table of Contents
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
+
   ##Installation
   ${data.installation}
+
   ##Usage
   ${data.usage}
-  ## License
+
+  ##License
   ${renderLicenseSection(data.license)}
+
   ##Contributing
   ${data.contributing}
+
   ##Tests
   ${data.tests}
+
   ##Questions
   For additional questions, please reach out on GitHub at https://github.com/${data.gitHubUser} or via email at ${data.email}. 
 `;
