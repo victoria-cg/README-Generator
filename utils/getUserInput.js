@@ -26,7 +26,7 @@ let questionsToAsk = [
   },
   {
     type: "input",
-    message: "What kind of license are you using?",
+    message: "What kind of license are you using? Choose from the following: MIT, Mozilla Public License 2.0, and GNU GPLv3",
     name: "license",
   },
   {
