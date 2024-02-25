@@ -19,7 +19,7 @@ function renderLicenseBadge(data) {
 // If there is no license, return an empty string
 function renderLicenseSection(data) {
   if (data) {
-    return `This project uses a ${data} license. For more information please reference the 'License' section of this project's repository or refer to https://choosealicense.com/ for more information regarding license types.`;
+    return `This project uses a ${data} license. For more information please refer to https://choosealicense.com/ and select the ${data} license.`;
     
   } else {
     return '';
