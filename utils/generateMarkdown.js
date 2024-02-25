@@ -32,22 +32,22 @@ function generateMarkdown(data) {
   - [Tests](#tests)
   - [Questions](#questions)
 
-  ##Installation
+  ## Installation
   ${data.installation}
 
-  ##Usage
+  ## Usage
   ${data.usage}
 
-  ##License
+  ## License
   ${renderLicenseSection(data.license)}
 
-  ##Contributing
+  ## Contributing
   ${data.contributing}
 
-  ##Tests
+  ## Tests
   ${data.tests}
 
-  ##Questions
+  ## Questions
   For additional questions, please reach out on GitHub at https://github.com/${data.gitHubUser} or via email at ${data.email}. 
 `;
 }
