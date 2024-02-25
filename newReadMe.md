@@ -1,8 +1,8 @@
-# test
-  undefined
+# Sample README
+  ![Static Badge](https://img.shields.io/badge/License%20Type%3A%20MIT-8A2BE2)
   
   ## Description
-  tst
+  sample desciption
 
   ## Table of Contents
   - [Description](#description)
@@ -14,19 +14,19 @@
   - [Questions](#questions)
 
   ## Installation
-  test
+  open index.js in the terminal and run the application with node
 
   ## Usage
-  test
+  run the project in node
 
   ## License
-  undefined
+  This project uses a MIT license. For more information please reference the 'License' section of this project's repository.
 
   ## Contributing
-  test
+  fork
 
   ## Tests
   test
 
   ## Questions
-  For additional questions, please reach out on GitHub at https://github.com/test or via email at test. 
+  For additional questions, please reach out on GitHub at https://github.com/name or via email at emailname. 
