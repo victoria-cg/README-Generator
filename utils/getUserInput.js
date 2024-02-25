@@ -2,31 +2,65 @@
 const inquirer = require("inquirer");
 
 //creates an array of objects that will be asked to the user using inquirer
+//objects are key-value pairs with 'name' as key and user input as value
 var questionsToAsk = [
   {
     type: "input",
-    message: "What is your license?",
+    message: "What is your title?",
+    name: "title",
+  },
+  {
+    type: "input",
+    message: "Write a description for your new README",
+    name: "description",
+  },
+  {
+    type: "input",
+    message: "What do you want your table of contents to say?",
+    name: "contents",
+  },
+  {
+    type: "input",
+    message: "What is your project's installation process?",
+    name: "installation",
+  },
+  {
+    type: "input",
+    message: "How do users use your project?",
+    name: "Usage",
+  },
+  {
+    type: "input",
+    message: "What kind of license are you using?",
     name: "license",
   },
   {
     type: "input",
-    message: "What is your title??",
-    name: "title",
+    message: "How can other people contribute to this project?",
+    name: "contributing",
   },
   {
-    type: "password",
-    message: "Re-enter password to confirm:",
-    name: "confirm",
+    type: "input",
+    message: "What tests can people run on this project/app?",
+    name: "tests",
   },
   {
-    message: "what is your first name?",
-    name: "firstName",
+    type: "input",
+    message: "What is your GitHub username?",
+    name: "gitHubUser",
   },
+  {
+    type: "input",
+    message: "What is your contact email address?",
+    name: "email",
+  }
 ];
 
+//async function waits for promise of user input to be fulfilled and returns that information
 const askForUserInput = async () => {
   const input = await inquirer.prompt(questionsToAsk);
   return input;
 };
 
+//exports user input data taken collected by the askForUserInput function, makes it available to other modules/js files
 module.exports = askForUserInput;
