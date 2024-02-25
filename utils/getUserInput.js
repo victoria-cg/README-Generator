@@ -3,7 +3,7 @@ const inquirer = require("inquirer");
 
 //creates an array of objects that will be asked to the user using inquirer
 //objects are key-value pairs with 'name' as key and user input as value
-var questionsToAsk = [
+let questionsToAsk = [
   {
     type: "input",
     message: "What is your title?",
@@ -27,7 +27,7 @@ var questionsToAsk = [
   {
     type: "input",
     message: "How do users use your project?",
-    name: "Usage",
+    name: "usage",
   },
   {
     type: "input",
@@ -58,8 +58,8 @@ var questionsToAsk = [
 
 //async function waits for promise of user input to be fulfilled and returns that information
 const askForUserInput = async () => {
-  const input = await inquirer.prompt(questionsToAsk);
-  return input;
+  const userInput = await inquirer.prompt(questionsToAsk);
+  return userInput;
 };
 
 //exports user input data taken collected by the askForUserInput function, makes it available to other modules/js files
