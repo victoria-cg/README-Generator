@@ -57,5 +57,5 @@ const askForUserInput = async () => {
   return userInput;
 };
 
-//exports user input data taken collected by the askForUserInput function, makes it available to other modules/js files
+//exports user input data collected by the askForUserInput function, makes it available to other modules/js files
 module.exports = askForUserInput;
