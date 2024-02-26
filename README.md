@@ -16,7 +16,7 @@ Download the directory containing all files from the GitHub Repository. Install 
 
 ## Usage
 
-To use the README Generator app, navigate into the README-generator directory that you downloaded. Then from the command line, use the command 'node index.js' to run the application in the terminal. Follow the text prompts in the terminal by writing text answers according to the prompts an hitting 'enter' after every answer you give. Once all questions are answered a new markdown file will be generated with your answers populated into a README template. See the screenshot below for an example of how the questions and answers will look in the command line when interacting with the app. This is a link to a video example of how users interact with the application to generate a README file: 
+To use the README Generator app, navigate into the README-generator directory that you downloaded. Then from the command line, use the command 'node index.js' to run the application in the terminal. Follow the text prompts in the terminal by writing text answers according to the prompts an hitting 'enter' after every answer you give. Once all questions are answered a new markdown file will be generated with your answers populated into a README template. See the screenshot below for an example of how the questions and answers will look in the command line when interacting with the app. This is a link to a video example of how users interact with the application to generate a README file: https://drive.google.com/file/d/16ZaTUU0kwFbFml6jaFdS6QAyNqV8EUA4/view?usp=sharing
 
     
 ![screenshot of command line interface and file directory for application with completed user prompts and new markdown file visible](assets/images/readme-terminal-screenshot.png)
