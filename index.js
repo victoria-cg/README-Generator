@@ -1,31 +1,24 @@
-// TODO: Include packages needed for this application
-//plan: need to require Fs package in order to write new markdown file, added below
+
+// need to require Fs package in order to write new markdown file, added below
 const fs = require("fs");
-// TODO: Create an array of questions for user input
-//const questions = []; this was provided in starter code
+
 //askForUserInput pulls user input from getUserInput.js
 const askForUserInput = require("./utils/getUserInput")
 //generateMarkdown pulls in information from generateMarkdown.js
 const generateMarkdown = require("./utils/generateMarkdown")
 
-// TODO: Create a function to write README file, done below in function main()
-//function writeToFile(fileName, data) {} this function was provided in starter code
-
-// TODO: Create a function to initialize app
-//function init() {} this was provided in starter code
+//function to initialize app, main(), is listed below
 
 async function main() {
-    //ask the questions, gests questions and their response data from askForUserInput, imported askForUserInput function from getUserInput JS file
-    var readMeData = await askForUserInput()
-    console.log("Got my read me data: ", readMeData)
+    //asks the questions, gets questions and their response data from askForUserInput, imported askForUserInput function from getUserInput JS file
+    const readMeData = await askForUserInput()
     //answers will be an object
     //creates variable to call the generateMarkdown function imported from JS file of the same name
-    //passes readMeData to generateMarkdown function so that it can populate data into the template
-    var template =generateMarkdown(readMeData)
-    //uses file system aka 'fs' to write a markdownfile called newReadMe.md, makes its value the value of template variable
+    //passes readMeData to generateMarkdown function so that it can populate data into the markdown template made by generateMarkdown
+    const template =generateMarkdown(readMeData)
+    //uses file system aka 'fs' to write a markdownfile called newReadMe.md, makes its value the value of 'template' variable
     fs.writeFileSync("newReadMe.md", template)
 }
 
 // Function call to initialize app
-//init(); init was provided in starter code
 main();

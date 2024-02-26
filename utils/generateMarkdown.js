@@ -1,4 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// function that returns a license badge based on which license name is passed in
 // If there is no license, return an empty string
 //function has placeholder in badge generating markdown link that will dynamically fill user data for the license name
 function renderLicenseBadge(data) {
@@ -11,11 +11,7 @@ function renderLicenseBadge(data) {
 
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-//function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
+// function that returns the license section of README, name of chosen licsense will be dynamically inserted where the 'data' placeholder currently is
 // If there is no license, return an empty string
 function renderLicenseSection(data) {
   if (data) {
@@ -26,9 +22,9 @@ function renderLicenseSection(data) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
-//pull formatting from previous functions into generateMarkdown function so it can be consolidated, render badges as intended
-//also pulls key/value pairs by name using the keys from getUserInput.js such as 'title'
+//function to generate markdown for README
+//renderLicenseBadge and renderLicenseSection functions are pulled into the generateMarkdown function below so that those sections will populate with the license badge and description
+//generateMarkdown function also pulls key/value pairs by name using the keys from getUserInput.js such as 'title', 'data' is the placeholder for the readMeData variable/constanat
 function generateMarkdown(data) {
   console.log("Info that generateMarkdown receives: ", data);
   return `# ${data.title}
@@ -65,5 +61,5 @@ function generateMarkdown(data) {
   For additional questions, please reach out on GitHub at https://github.com/${data.gitHubUser} or via email at ${data.email}. 
 `;
 }
-
+//exports generateMarkdown so its information can be used when imported into index.js
 module.exports = generateMarkdown;
